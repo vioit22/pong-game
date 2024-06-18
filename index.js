@@ -88,6 +88,7 @@ function update(){
     // Check for score and reset ball if necessary
     if(ball.x - ball.radius < 0){
         com.score++;
+        alert("Game Over! Click OK to Reset a Game! Score is Displayed in the Game!");
         resetBall();
     }else if (ball.x + ball.radius > canvas.width){
         user.score++;
